@@ -1,10 +1,13 @@
 import "./App.css";
-
+import Header from "./component/Header";
 function App() {
   return (
-    <main class="flex justify-center items-center gap-4 flex-col min-h-screen">
-      <h1>Hello React</h1>
-    </main>
+       <div>
+         <h1>Hello React</h1>
+          <Header></Header>
+       </div>
+     
+    
   );
 }
 
