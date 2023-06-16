@@ -1,32 +1,18 @@
-import "./App.css";
-import Item from "./component/item";
+import React from 'react';
+import Item from './component/Item';
 
-function App() {
-  const products = [
-    {id:1,
-     tittle: "Nirma",
-     amount:40,
-     date: new Date (2023, 5, 12) 
-    },
-    {id:2,
-      tittle: "Nirma2",
-      amount:40,
-      date: new Date (2023, 5, 12) 
-     },
-     {id:2,
-      tittle: "Nirma2",
-      amount:40,
-      date: new Date (2023, 5, 12) 
-     },
-     {id:4,
-      tittle: "Nirma3",
-      amount:40,
-      date: new Date (2023, 5, 12) 
-     }
-  ];
+const App = () => {
+  
   return (
-       
-  );
+    <>
+      <div className='flex items-center justify-center h-screen '>
+        <div className='h-[30rem] w-[25rem] bg-yellow-600 flex justify-center p-4 rounded-xl'>
+          <Item/>
+          
+        </div>
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App
